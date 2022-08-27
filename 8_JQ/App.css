@@ -1,0 +1,87 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    outline: none;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f4f8;
+    color: #4a4a4a;
+    overflow-x: hidden;
+}
+main {
+    padding-top: 100px;
+ /*   min-height: 1000px; */
+}
+h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+p{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #696868;
+    margin-bottom: 10px;
+}
+.accordion {
+    width: 800px;
+    margin: 0 auto;
+}
+.accordion_item {
+    margin-bottom: 15px;
+}
+.accordion_title {
+    position: relative;
+    padding: 24px 80px 24px 30px;
+    background-color: rgb(105, 196, 235);
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.accordion_title .arrow {
+    position: absolute;
+    right: 30px;
+    top: 45%;
+    transition: all ease 0.6s 0.5s;
+    -webkit-transition: all ease 0.6s 0.5s;
+    -moz-transition: all ease 0.6s 0.5s;
+    -ms-transition: all ease 0.6s 0.5s;
+    -o-transition: all ease 0.6s 0.5s;
+}
+.accordion_desc {
+    padding: 30px;
+    background-color: gray;
+    border-radius: 0 0  16px 16px;
+    -webkit-border-radius: 0 0  16px 16px;
+    -moz-border-radius: 0 0  16px 16px;
+    -ms-border-radius: 0 0  16px 16px;
+    -o-border-radius: 0 0  16px 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    border-top: 3px solid rgba(0, 0, 0, 0.07);
+    font-weight: bold;
+    font-style: inherit;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.accordion_item.active .arrow {
+    transform: scale(-1) translateY(5px);
+    -webkit-transform: scale(-1) translateY(5px);
+    -moz-transform: scale(-1) translateY(5px);
+    -ms-transform: scale(-1) translateY(5px);
+    -o-transform: scale(-1) translateY(5px);
+}
+.accordion_item.active .accordion_title {
+    border-radius: 16px 16px 0 0;
+    -webkit-border-radius: 16px 16px 0 0;
+    -moz-border-radius: 16px 16px 0 0;
+    -ms-border-radius: 16px 16px 0 0;
+    -o-border-radius: 16px 16px 0 0;
+}
